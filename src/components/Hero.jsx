@@ -25,7 +25,7 @@ const Hero = () => {
                     <a href="#library"
                         className="inline-flex items-center gap-2 bg-[#ccff00] text-black font-semibold px-6 py-3 rounded-full"
                     >
-                        BROWSE WORKOUTS <FaArrowRight />
+                        BROWSE WORKOUTS
                     </a>
                 </div>
 

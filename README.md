@@ -1,36 +1,20 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+FitLog
 
-## Getting Started
+Description
+FitLog is a dark themed gym workout tracking app where a user can browse workouts from a real API, view full details of any workout, and build their own daily workout plan. User can add workouts to today's plan, save workouts for later, and track total exercises, minutes and calories from the plan.
 
-First, run the development server:
+Technology Used
+Next.js Tailwind CSS DaisyUI React Icons React-Toastify
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Features
+1.Browse workouts: All workouts are fetched live from an external API and shown as cards in a grid, with duration, calories and rating. Clicking a card takes the user to that workout's detail page.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2.Workout details page: Shows full information of a workout like equipment, difficulty, sets, reps, duration, calories, rating and step by step instructions. User can add the workout to today's plan or save it for later from here.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+3.My Plan page: Shows two tabs, Today's Plan and Saved. A metrics row on top shows total exercises, minutes and calories, and it updates live depending on which tab is active. User can mark a workout as done or remove it from the list.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4.Sort by option: In the library section user can sort all workouts by duration, calories or rating using a dropdown.
 
-## Learn More
+5.Toast notifications: Every important action like adding to plan, saving, marking as done or removing a workout shows a toast message so the user gets instant feedback.
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+6.Responsive design: The whole app works properly on mobile, tablet and desktop screen sizes.
