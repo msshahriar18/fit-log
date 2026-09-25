@@ -9,6 +9,11 @@ const AddToPlanButton = ({ workout }) => {
     const { plan, setPlan } = useContext(FitLogContext);
 
     const handleAddToPlan = () => {
+        const alreadyAdded = plan.some((item) => item.id === workout.id);
+        if (alreadyAdded) {
+            toast.warning("Already in today's plan");
+            return;
+        }
         setPlan([...plan, workout]);
         toast.success("Added to today's plan");
     };

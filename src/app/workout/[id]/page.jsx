@@ -79,7 +79,7 @@ const WorkoutDetailsPage = async ({ params }) => {
                         </div>
                         <div className="bg-gray-900 rounded-xl p-4">
                             <p className="text-gray-500 text-sm">CALORIES</p>
-                            <p className="font-semibold">{workout.calories}</p>
+                            <p className="font-semibold">{workout.caloriesBurned}</p>
                         </div>
                         <div className="bg-gray-900 rounded-xl p-4">
                             <p className="text-gray-500 text-sm">RATING</p>

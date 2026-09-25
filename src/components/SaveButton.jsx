@@ -9,6 +9,11 @@ const SaveButton = ({ workout }) => {
     const { saved, setSaved } = useContext(FitLogContext);
 
     const handleSave = () => {
+        const alreadySaved = saved.some((item) => item.id === workout.id);
+        if (alreadySaved) {
+            toast.warning("Already saved");
+            return;
+        }
         setSaved([...saved, workout]);
         toast.success("Saved for later");
     };
