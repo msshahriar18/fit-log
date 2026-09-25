@@ -1,14 +1,15 @@
 "use client";
 
+import { useContext } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import Logo from "@/assets/logo.png";
+import { FitLogContext } from "@/context/FitLogContext";
 
-
-
-const Navbar = ({ planCount = 0, savedCount = 0 }) => {
+const Navbar = () => {
     const pathname = usePathname();
+    const { plan, saved } = useContext(FitLogContext);
 
     const navLinks = [
         { name: "Workout", href: "/" },
@@ -40,19 +41,18 @@ const Navbar = ({ planCount = 0, savedCount = 0 }) => {
                     ))}
                 </ul>
 
-                {/* Right side badges */}
                 <div className="flex items-center gap-x-3">
                     <Link
                         href="/my-plan"
                         className="bg-[#ccff00] text-black text-sm font-semibold px-3 py-1 rounded-full"
                     >
-                        Plan {planCount}
+                        Plan {plan.length}
                     </Link>
                     <Link
                         href="/my-plan"
                         className="border border-gray-500 text-gray-300 text-sm px-3 py-1 rounded-full"
                     >
-                        Saved {savedCount}
+                        Saved {saved.length}
                     </Link>
                 </div>
             </div>

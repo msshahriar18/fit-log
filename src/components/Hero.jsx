@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Banner from "@/assets/banner.png";
+import { FaArrowRight } from "react-icons/fa";
 
 const Hero = () => {
     return (
@@ -17,14 +18,14 @@ const Hero = () => {
 
                     <p className="text-gray-400 max-w-md mx-auto md:mx-0 mb-8">
                         FitLog is a dark, no-nonsense gym companion: pick a lift, lock it
-                        into today's plan, and watch the week's work add up.
+                        into today&apos;s plan, and watch the week&apos;s work add up.
                     </p>
 
 
                     <a href="#library"
                         className="inline-flex items-center gap-2 bg-[#ccff00] text-black font-semibold px-6 py-3 rounded-full"
                     >
-                        BROWSE WORKOUTS
+                        BROWSE WORKOUTS <FaArrowRight />
                     </a>
                 </div>
 

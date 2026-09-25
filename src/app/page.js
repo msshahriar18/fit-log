@@ -1,11 +1,13 @@
 import Hero from "@/components/Hero";
-import Image from "next/image";
+import Library from "@/components/Library";
 
-export default function Home() {
-  return (
-    <div>
-      <Hero />
-    </div>
+const HomePage = () => {
+    return (
+        <div>
+            <Hero />
+            <Library />
+        </div>
+    );
+};
 
-  );
-}
+export default HomePage;
